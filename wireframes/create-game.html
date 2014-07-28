@@ -1,0 +1,154 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Language" content="en-us">
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<link rel="stylesheet" type="text/css" href="create-game.css" />
+		<title>BetGame</title>
+	</head>
+	<body>
+		<div class="header">
+			<h1><font face="SimSun-ExtB">BetGame</font></h1>
+		</div>
+		<div class="content">
+			<div class="form-container">
+				<form class="create-game">
+				<div class="first-step step">
+					<p><h3>Basic Details</h3></p>
+					<p>Name: <input type="text"/></p>
+					<p>Tournament type: 
+						<select>
+							<option>Fifa World Cup</option>
+							<option>Fifa European Cup</option>
+							<option>UEFA Champions League</option>
+							<option>UEFA European League</option>
+							<option>IHF Handball World Cup</option>
+							<option>IHF Handball European Cup</option>
+							<option>Olympic Handball Cup</option>
+							<option>Water Polo World Cup</option>
+							<option>Water Polo European Cup</option>
+							<option>Olympic Water Polo Cup</option>
+							<option>Custom Tournament</option>
+						</select>
+					</p>
+					<div class="button-box">
+						<button>Next</button>
+					</div>
+				</div>
+				<div class="second-step step">
+					<div class="team-selection">
+						<p><h3>Groups&Teams</h3></p>
+						<p> 
+							Team name: <input type="text" />
+							Group: <select>
+								<option>Group A</option>
+								<option>Group B</option>
+								<option>Group C</option>
+								<option>Group D</option>
+								<option>Group E</option>
+								<option>Group F</option>
+								<option>Group G</option>
+								<option>Group H</option>
+							</select>
+							<button>Add</button>
+						</p>
+						<div class="group-display">
+							<div class="group">
+								<p class="group-name">Group A</p>
+								<p class="team-name">1. Spain</p>
+								<p class="team-name">2. Argentina</p>
+							</div>
+							<div class="group">
+								<p class="group-name">Group B</p>
+								<p class="team-name">1. Brasil</p>
+								</div>
+							<div class="group">
+								<p class="group-name">Group C</p>
+								<p class="team-name">1. Germany</p>
+							</div>
+							<div class="group">
+								<p class="group-name">Group D</p>
+								<p class="team-name">1. Chile</p>
+							</div>
+							<div class="group">
+								<p class="group-name">Group E</p>
+								<p class="team-name">1. Peru</p>
+							</div>
+							<div class="group">
+								<p class="group-name">Group F</p>
+								<p class="team-name">1. Italy</p>
+							</div>
+							<div class="group">
+								<p class="group-name">Group G</p>
+								<p class="team-name">1. Greece</p>
+							</div>
+							<div class="group">
+								<p class="group-name">Group H</p>
+								<p class="team-name">1. Australia</p>
+								<p class="team-name">2. Portugal</p>
+								<p class="team-name">3. Netherlands</p>
+							</div>
+						</div>
+					</div>
+					<div class="button-box">
+						<button>Next</button>
+					</div>
+				</div>
+				<div class="third-step step">
+					<p><h3>Fixtures</h3></p>
+					<div class="matches">
+						<div class="rounds">
+							Round: <select>
+								<option>1st Round</option>
+								<option>2nd Round</option>
+								<option>3rd Round</option>
+								<option>Round of 16</option>
+								<option>Quarter-finals</option>
+								<option selected="true">Semi-finals</option>
+								<option>Third place</option>
+								<option>Final</option>
+							</select>
+						</div>
+						<div class="date-box">
+							Dates: <br>
+							Q1-Q2: <input type="text" value="07/02/14"/><img src="calendar.png" class="datepicker"/>
+							Q3-Q4: <input type="text" value="07/02/14"/><img src="calendar.png" class="datepicker"/>
+						</div>
+					</div>
+					<div class="button-box">
+						<button>Next</button>
+					</div>
+				</div>
+				<div class="fourth-step step">
+					<p><h3>Rules</h3></p>
+					Exact match: <input type="text" value = "10 Pts"><br>
+					Exact Goal Difference: <input type="text" value = "6 Pts"><br>
+					Winner: <input type="text" value = "4 Pts"><br>
+					At least one team's goals: <input type="text" value = "3 Pts"><br>
+					Number of Goals: <input type="text" value = "2 Pts"><br>
+					Goal difference (switched): <input type="text" value = "1 Pts"><br>
+					Custom 1: <input type="text" value = "3 Pts"><br>
+					<button>Add custom rule</button>
+					<div class="button-box">
+						<button>Next</button>
+					</div>
+				</div>
+				<div class="fifth-step step">
+					<p><h3>Attendees</h3></p>
+					<div class="tags">
+						<div class="tag"> Person 1</div>
+						<div class="tag"> Person 2</div>
+						<div class="tag"> Person 3</div>
+						<div class="tag"> Person 4</div>
+					</div>
+					New: <input type="text"><br>
+					<button>Add Attendee</button>
+					<div class="button-box">
+						<input type="submit" value="Submit" />
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>
