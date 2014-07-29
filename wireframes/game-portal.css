@@ -1,6 +1,8 @@
 body{
 	margin: 0px;
 	font-family: SimSun-ExtB;
+	overflow-y:auto;
+	height:100%;
 }
 
 .header{
@@ -21,16 +23,11 @@ body{
 	margin: 0px;
 }
 .portal-content{
-	overflow: auto;
+	overflow: hidden;
 	width:auto;
-	height:100%;
-	overflow-y:visible;
-	display: table;
-    border-collapse:collapse;
 }
 
 .first-row{
-	display: table-row;
 	border-bottom: grey double 1px;
 }
 
@@ -69,16 +66,15 @@ input[type="number"]{
 }
 
 .tips-to-go{
-	width: 50%;
-	margin:0px;
-	display: table-cell;
+	display: inline-block;
+	margin-left:10px;
 }
 
 .game-standings{
-	text-align: right;
-	display: table-cell;
-	width: 45%;
+	width: 300px;
 	margin-right:5%;
+	float:right;
+	text-align:right;
 }
 
 table, thead, tbody, td, th{
@@ -98,10 +94,39 @@ thead tr{
 }
 
 .tournament-standings{
-	display: table-row;
 	width:100%;
+	border-bottom: grey solid 1px;
 }
 
 .tournament-standings h3{
 	margin-top: 10px;
+}
+
+.selected-group{
+	background-color : grey;
+	color: yellow;
+}
+
+.current-group{
+	margin-bottom:10px;
+}
+
+.fixtures{
+	width: 100%
+}
+
+.fixtures h3{
+	margin-top:10px;
+}
+.current-fixtures{
+	display: flex;
+	flex-wrap: wrap;
+}
+.tournament-standings div{
+	width:100%;
+}
+
+.tip-notes{
+	color: orange;
+	margin-right:50px;
 }

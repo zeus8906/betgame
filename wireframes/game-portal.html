@@ -25,20 +25,6 @@
 				<div class="portal-header"><h2>Name of the Game</h2></div>
 				<div class="portal-content">
 					<div class="first-row">
-						<div class="tips-to-go">
-							<p><h3>Tips to go</h3></p>
-							<form class="tip-form">
-								<p><font class="fixture-date">04/13/14</font> <font class="deadline-date">(Deadline: 04/12/14)</font> Team A <input type="number" min="0" max="100"> -
-									<input type="number" min="0" max="100"> Team B </p>
-								<p><font class="fixture-date">04/13/14</font> <font class="deadline-date">(Deadline: 04/12/14)</font> Team A <input type="number" min="0" max="100"> -
-									<input type="number" min="0" max="100"> Team B</p>
-								<p><font class="fixture-date">04/13/14</font> <font class="deadline-date">(Deadline: 04/12/14)</font> Team A <input type="number" min="0" max="100"> -
-									<input type="number" min="0" max="100"> Team B</p>
-								<p><font class="fixture-date">04/13/14</font> <font class="deadline-date">(Deadline: 04/12/14)</font> Team A <input type="number" min="0" max="100"> -
-									<input type="number" min="0" max="100"> Team B</p>
-								<input type="submit" value="Send tips" />
-							</form>
-						</div>
 						<div class="game-standings">
 							<p><h3>Game Standings</h3></p>
 							<table class="game-table">
@@ -73,14 +59,126 @@
 								</tbody>
 							</table>
 						</div>
+						<div class="tips-to-go">
+							<p><h3>Tips to go</h3></p>
+							<form class="tip-form">
+								<p><font class="fixture-date">04/13/14</font> <font class="deadline-date">(Deadline: 04/12/14)</font> Team A <input type="number" min="0" max="100"> -
+									<input type="number" min="0" max="100"> Team B </p>
+								<p><font class="fixture-date">04/13/14</font> <font class="deadline-date">(Deadline: 04/12/14)</font> Team A <input type="number" min="0" max="100"> -
+									<input type="number" min="0" max="100"> Team B</p>
+								<p><font class="fixture-date">04/13/14</font> <font class="deadline-date">(Deadline: 04/12/14)</font> Team A <input type="number" min="0" max="100"> -
+									<input type="number" min="0" max="100"> Team B</p>
+								<p><font class="fixture-date">04/13/14</font> <font class="deadline-date">(Deadline: 04/12/14)</font> Team A <input type="number" min="0" max="100"> -
+									<input type="number" min="0" max="100"> Team B</p>
+								<input type="submit" value="Send tips" />
+							</form>
+						</div>
 					</div>
 					<div class="tournament-standings">
-						<p><h3>Tournament Standings</h3></p>
-						<p><select>
+						<div><h3>Tournament Standings</h3></div>
+						<div><select>
 								<option>Groups</option>
 								<option>Knocking-out</option>
 							</select>
-						</p>
+						</div>
+						<div>
+							<a href="">Group A</a>
+							<a href="">Group B</a>
+							<a href="">Group C</a>
+							<a href="" class="selected-group">Group D</a>
+							<a href="">Group E</a>
+							<a href="">Group F</a>
+							<a href="">Group G</a>
+							<a href="">Group H</a>
+						</div>
+						<h5>--- Group D ---</h5>
+						<table class="current-group">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Team</th>
+									<th>Played</th>
+									<th>W</th>
+									<th>D</th>
+									<th>L</th>
+									<th>GF</th>
+									<th>GA</th>
+									<th>GD</th>
+									<th>Pts</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1.</td>
+									<td>Germany</td>
+									<td>3</td>
+									<td>2</td>
+									<td>1</td>
+									<td>0</td>
+									<td>7</td>
+									<td>2</td>
+									<td>+5</td>
+									<td><b>7</b></td>
+								</tr>
+								<tr>
+									<td>2.</td>
+									<td>Germany</td>
+									<td>3</td>
+									<td>2</td>
+									<td>1</td>
+									<td>0</td>
+									<td>7</td>
+									<td>2</td>
+									<td>+5</td>
+									<td><b>7</b></td>
+								</tr>
+								<tr>
+									<td>3.</td>
+									<td>Germany</td>
+									<td>3</td>
+									<td>2</td>
+									<td>1</td>
+									<td>0</td>
+									<td>7</td>
+									<td>2</td>
+									<td>+5</td>
+									<td><b>7</b></td>
+								</tr>
+								<tr>
+									<td>4.</td>
+									<td>Germany</td>
+									<td>3</td>
+									<td>2</td>
+									<td>1</td>
+									<td>0</td>
+									<td>7</td>
+									<td>2</td>
+									<td>+5</td>
+									<td><b>7</b></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="Fixtures">
+						<p><h3>Fixtures</h3></p>
+						<select>
+							<option selected = "true">1st Round</option>
+							<option>2nd Round</option>
+							<option>3rd Round</option>
+							<option>Round of 16</option>
+							<option>Quarter Final</option>
+							<option>Semi Final</option>
+							<option>Final</option>
+						</select>
+						<div class="current-fixtures">
+							<p><font class="fixture-date">04/13/14</font> Team A 3-1 Team B <font class="tip-notes">(Your tip: 3-1 | 10Pts)</font></p>
+							<p><font class="fixture-date">04/13/14</font> Team A 3-1 Team B <font class="tip-notes">(Your tip: 3-1 | 10Pts)</font></p>
+							<p><font class="fixture-date">04/13/14</font> Team A 3-1 Team B <font class="tip-notes">(Your tip: 3-1 | 10Pts)</font></p>
+							<p><font class="fixture-date">04/13/14</font> Team A 3-1 Team B <font class="tip-notes">(Your tip: 3-1 | 10Pts)</font></p>
+							<p><font class="fixture-date">04/13/14</font> Team A 3-1 Team B <font class="tip-notes">(Your tip: 3-1 | 10Pts)</font></p>
+							<p><font class="fixture-date">04/13/14</font> Team A 3-1 Team B <font class="tip-notes">(Your tip: 3-1 | 10Pts)</font></p>
+							<p><font class="fixture-date">04/13/14</font> Team A 3-1 Team B <font class="tip-notes">(Your tip: 3-1 | 10Pts)</font></p>
+						</div>
 					</div>
 				</div>
 			</div>
