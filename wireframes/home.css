@@ -76,3 +76,10 @@ body{
 .notification-item{
 	border: grey solid 1px;
 }
+
+.notification-item.invitation{
+	background-color:green;
+}
+.notification-item.update{
+	background-color:pink;
+}
