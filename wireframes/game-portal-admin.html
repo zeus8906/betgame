@@ -2,17 +2,17 @@
 	<head>
 		<meta http-equiv="Content-Language" content="en-us">
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-		<link rel="stylesheet" type="text/css" href="game-portal.css" />
+		<link rel="stylesheet" type="text/css" href="game-portal-admin.css" />
 		<link rel="stylesheet" type="text/css" href="js/jquery-ui.custom/jquery-ui.theme.css" />
 		<script src="js/jquery-2.1.1.js"></script>
 		<script src="js/jquery-ui.custom/jquery-ui.js"></script>
-		<script src="js/game-portal.js"></script>
+		<script src="js/game-portal-admin.js"></script>
 		<title>BetGame</title>
 	</head>
 	<body>
 		<div class="header">
 			<h1><font face="SimSun-ExtB">BetGame</font></h1>
-			<h2><font face="SimSun-ExtB">-- Game Portal --</font></h2>
+			<h2><font face="SimSun-ExtB">-- Game Portal Admin--</font></h2>
 			<div class="menu">
 				<a href="nowhere">User profile</a>
 				<a href="nowhere">Log out</a>
@@ -78,7 +78,24 @@
 							</form>
 						</div>
 					</div>
-				<div class="portal-content">		
+				<div class="portal-content">
+					<h3>Provide Match Results</h3>
+					<div>
+						<p><font class="fixture-date">06/13/14</font> Chile <input type="number" min="0" max="100"> -
+							<input type="number" min="0" max="100"> Spain <button onclick="window.alert('Are you sure you want to send?')">Send</button></p>
+						<p><font class="fixture-date">06/13/14</font> USA <input type="number" min="0" max="100"> -
+							<input type="number" min="0" max="100"> Australia <button onclick="window.alert('Are you sure you want to send?')">Send</button></p>
+						<p><font class="fixture-date">06/14/14</font> Burkina Faso <input type="number" min="0" max="100"> -
+							<input type="number" min="0" max="100"> Feroer-Islands <button onclick="window.alert('Are you sure you want to send?')">Send</button></p>
+						<div class="custom-question">How will be the first Goal scored on the match? (Head, Shoot, Torso, etc.) <button onclick="window.alert('Are you sure you want to send?')">Send</button><br>
+							<input type="checkbox" checked="true">Head</input><br>
+							<input type="checkbox">Shoot</input><br>
+							<input type="checkbox">This question sucks</input><br>
+							<input type="checkbox">There will be no goal</input><br>
+							<input type="checkbox">nogoal</input><br>
+						</div>
+						<button>Send all</button>	
+					</div>
 					<h3>Tournament Standings</h3>
 					<div class="tournament-standings">
 						<div><select>
@@ -176,18 +193,80 @@
 							<option>Final</option>
 						</select>
 						<div class="current-fixtures">
-							<p><font class="fixture-date">06/13/14</font> Serbia 6-3 Andorra <font class="tip-notes">(Your tip: 3-1 | 6 Pts)</font></p>
-							<p><font class="fixture-date">06/13/14</font> Chile 5-0 Peru <font class="tip-notes">(Your tip: 1-1 | 0 Pts)</font></p>
-							<p><font class="fixture-date">06/13/14</font> Germany 1-2 USA <font class="tip-notes">(Your tip: 2-1 | 4 Pts)</font></p>
-							<p><font class="fixture-date">06/14/14</font> Spain 0-2 Portugal <font class="tip-notes">(Your tip: 0-2 | 10 Pts)</font></p>
-							<p><font class="fixture-date">06/14/14</font> Brasil 1-1 France <font class="tip-notes">(Your tip: 3-1 | 1 Pts)</font></p>
-							<p><font class="fixture-date">06/14/14</font> Honduras 1-8 Hungary <font class="tip-notes">(Your tip: 1-8 | 10 Pts)</font></p>
-							<p><font class="fixture-date">06/15/14</font> Costa Rica 3-1 Egypt <font class="tip-notes">(Your tip: 0-1 | 3 Pts)</font></p>
+							<p><input type="text" value="06/13/14"> 
+								<select>
+									<option selected="true">Serbia</option>
+									<option>Andorra</option>
+									<option>Chile</option>
+									<option>Germany</option>
+								<select>
+								<input type="number" min="0" max="100" value="6"> - 
+								<input type="number" min="0" max="100" value="3">
+								<select>
+									<option>Serbia</option>
+									<option selected="true">Andorra</option>
+									<option>Chile</option>
+									<option>Germany</option>
+								<select> <font class="tip-notes">(Your tip: 3-1 | 6 Pts)</font></p>
+							<p><input type="text" value="06/13/14">
+							<select>
+									<option>Serbia</option>
+									<option>Andorra</option>
+									<option selected="true">Chile</option>
+									<option>Germany</option>
+								<select>
+								<input type="number" min="0" max="100" value="3"> - 
+								<input type="number" min="0" max="100" value="1">
+								<select>
+									<option>Serbia</option>
+									<option>Andorra</option>
+									<option>Chile</option>
+									<option selected="true">Germany</option>
+								<select>  <font class="tip-notes">(Your tip: 3-1 | 10 Pts)</font></p>
+							<p><input type="text" value="06/13/14">
+							<select>
+									<option selected="true">Peru</option>
+									<option>Andorra</option>
+									<option>Chile</option>
+									<option>Germany</option>
+								<select>
+								<input type="number" min="0" max="100" value="4"> - 
+								<input type="number" min="0" max="100" value="0">
+								<select>
+									<option>Serbia</option>
+									<option selected="true">France</option>
+									<option>Chile</option>
+									<option>Germany</option>
+								<select>  <font class="tip-notes">(Your tip: 1-1 | 0 Pts)</font></p>
+							<p><input type="text" value="06/13/14">
+							<select>
+									<option selected="true">Spain</option>
+									<option>Andorra</option>
+									<option>Chile</option>
+									<option>Germany</option>
+								<select>
+								<input type="number" min="0" max="100" value="1"> - 
+								<input type="number" min="0" max="100" value="8">
+								<select>
+									<option>Serbia</option>
+									<option selected="true">Hungary</option>
+									<option>Chile</option>
+									<option>Germany</option>
+								<select>  <font class="tip-notes">(Your tip: 2-1 | 2 Pts)</font></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
+		<div class="starting-modal" style="display:none; font-size:12px;">
+			<p><font class="fixture-date">06/13/14</font> Chile <input type="number" min="0" max="100"> -
+				<input type="number" min="0" max="100"> Spain <button onclick="window.alert('Are you sure you want to send?')">Send</button></p>
+			<p><font class="fixture-date">06/13/14</font> USA <input type="number" min="0" max="100"> -
+				<input type="number" min="0" max="100"> Australia <button onclick="window.alert('Are you sure you want to send?')">Send</button></p>
+			<p><font class="fixture-date">06/14/14</font> Burkina Faso <input type="number" min="0" max="100"> -
+				<input type="number" min="0" max="100"> Feroer-Islands <button onclick="window.alert('Are you sure you want to send?')">Send</button></p>
+		<div>
 	</body>
 
 </html>

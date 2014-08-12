@@ -118,6 +118,11 @@ thead tr{
 	display: flex;
 	flex-wrap: wrap;
 }
+
+.current-fixtures input[type="text"]{
+	width:100px;
+}
+
 .tournament-standings div{
 	width:100%;
 }

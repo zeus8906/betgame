@@ -5,6 +5,7 @@ body{
 
 form{
 	width:600px;
+	margin-bottom: 50px;
 }
 .header{
 	width:100%;
@@ -54,7 +55,7 @@ p.group-name{
 }
 
 .date-box{
-	width:250px;
+	width:350px;
 	float:right;
 }
 
@@ -84,4 +85,29 @@ p.group-name{
 
 .fifth-step{
 	border: none !important;
+}
+
+.rule-label{
+	text-align: left;
+	width: 250px;
+	display: inline-block;
+}
+
+.fourth-step input[type="text"]{
+	width : 30px;
+	margin-right : 10px;
+}
+
+.tags font{
+	cursor: pointer;
+}
+
+.ui-tooltip{
+	width:250px;
+}
+
+.ui-helper-hidden-accessible { display:none; }
+
+.group input {
+	width: 100px;
 }

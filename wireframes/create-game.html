@@ -3,11 +3,24 @@
 		<meta http-equiv="Content-Language" content="en-us">
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 		<link rel="stylesheet" type="text/css" href="create-game.css" />
+		<link rel="stylesheet" type="text/css" href="js/jquery-ui.custom/jquery-ui.theme.css" />
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/jquery-ui.custom/jquery-ui.js"></script>
+		<script>
+			$(function() {
+				$( document ).tooltip({
+					content: function(){
+						return $(this).attr('title');
+					}
+				});
+			});
+		</script>
 		<title>BetGame</title>
 	</head>
 	<body>
 		<div class="header">
 			<h1><font face="SimSun-ExtB">BetGame</font></h1>
+			<h2><font face="SimSun-ExtB">-- Create Game --</font></h2>
 		</div>
 		<div class="content">
 			<div class="form-container">
@@ -37,55 +50,49 @@
 				<div class="second-step step">
 					<div class="team-selection">
 						<p><h3>Groups&Teams</h3></p>
-						<p> 
-							Team name: <input type="text" />
-							Group: <select>
-								<option>Group A</option>
-								<option>Group B</option>
-								<option>Group C</option>
-								<option>Group D</option>
-								<option>Group E</option>
-								<option>Group F</option>
-								<option>Group G</option>
-								<option>Group H</option>
-							</select>
-							<button>Add</button>
-						</p>
 						<div class="group-display">
 							<div class="group">
 								<p class="group-name">Group A</p>
 								<p class="team-name">1. Spain</p>
 								<p class="team-name">2. Argentina</p>
+								<p class="team-name">3. <input type="text"></p>
 							</div>
 							<div class="group">
 								<p class="group-name">Group B</p>
 								<p class="team-name">1. Brasil</p>
+								<p class="team-name">2. <input type="text"></p>
 								</div>
 							<div class="group">
 								<p class="group-name">Group C</p>
 								<p class="team-name">1. Germany</p>
+								<p class="team-name">2. <input type="text"></p>
 							</div>
 							<div class="group">
 								<p class="group-name">Group D</p>
 								<p class="team-name">1. Chile</p>
+								<p class="team-name">2. <input type="text"></p>
 							</div>
 							<div class="group">
 								<p class="group-name">Group E</p>
 								<p class="team-name">1. Peru</p>
+								<p class="team-name">2. <input type="text"></p>
 							</div>
 							<div class="group">
 								<p class="group-name">Group F</p>
 								<p class="team-name">1. Italy</p>
+								<p class="team-name">2. <input type="text"></p>
 							</div>
 							<div class="group">
 								<p class="group-name">Group G</p>
 								<p class="team-name">1. Greece</p>
+								<p class="team-name">2. <input type="text"></p>
 							</div>
 							<div class="group">
 								<p class="group-name">Group H</p>
 								<p class="team-name">1. Australia</p>
 								<p class="team-name">2. Portugal</p>
 								<p class="team-name">3. Netherlands</p>
+								<p class="team-name">4. <input type="text"></p>
 							</div>
 						</div>
 					</div>
@@ -110,8 +117,30 @@
 						</div>
 						<div class="date-box">
 							Dates: <br>
-							Q1-Q2: <input type="text" value="07/02/14"/><img src="calendar.png" class="datepicker"/>
-							Q3-Q4: <input type="text" value="07/02/14"/><img src="calendar.png" class="datepicker"/>
+							<select>
+								<option selected="true" title="Winner of Quarter-finals #1">Q1</option>
+								<option>Q2</option>
+								<option>Q3</option>
+								<option>Q4</option>
+							</select>-
+							<select>
+								<option>Q1</option>
+								<option selected="true">Q2</option>
+								<option>Q3</option>
+								<option>Q4</option>
+							</select>: <input type="text" value="07/02/14"/><img src="calendar.png" class="datepicker"/>
+							<select>
+								<option>Q1</option>
+								<option>Q2</option>
+								<option selected="true">Q3</option>
+								<option>Q4</option>
+							</select>-
+							<select>
+								<option>Q1</option>
+								<option>Q2</option>
+								<option>Q3</option>
+								<option selected="true">Q4</option>
+							</select>: <input type="text" value="07/02/14"/><img src="calendar.png" class="datepicker"/>
 						</div>
 					</div>
 					<div class="button-box">
@@ -120,13 +149,13 @@
 				</div>
 				<div class="fourth-step step">
 					<p><h3>Rules</h3></p>
-					Exact match: <input type="text" value = "10 Pts"><br>
-					Exact Goal Difference: <input type="text" value = "6 Pts"><br>
-					Winner: <input type="text" value = "4 Pts"><br>
-					At least one team's goals: <input type="text" value = "3 Pts"><br>
-					Number of Goals: <input type="text" value = "2 Pts"><br>
-					Goal difference (switched): <input type="text" value = "1 Pts"><br>
-					Custom 1: <input type="text" value = "3 Pts"><br>
+					<div class="rule-label"><input type="checkbox">Exact match:</input></div> <input type="text" value = "10">Pts<br>
+					<div class="rule-label"><input type="checkbox">Exact Goal Difference:</input></div> <input type="text" value = "6">Pts<br>
+					<div class="rule-label"><input type="checkbox">Winner:</input></div> <input type="text" value = "4">Pts<br>
+					<div class="rule-label"><input type="checkbox">At least one team's goals:</input></div> <input type="text" value = "3">Pts<br>
+					<div class="rule-label"><input type="checkbox">Number of Goals:</input></div> <input type="text" value = "2">Pts<br>
+					<div class="rule-label"><input type="checkbox">Goal difference (switched):</input></div> <input type="text" value = "1">Pts<br>
+					<div class="rule-label"><input type="checkbox">Custom 1: <button>Remove</button></input></div> <input type="text" value = "3">Pts<br>
 					<button>Add custom rule</button>
 					<div class="button-box">
 						<button>Next</button>
@@ -135,10 +164,10 @@
 				<div class="fifth-step step">
 					<p><h3>Attendees</h3></p>
 					<div class="tags">
-						<div class="tag"> Person 1</div>
-						<div class="tag"> Person 2</div>
-						<div class="tag"> Person 3</div>
-						<div class="tag"> Person 4</div>
+						<div class="tag" title="<b>Last 3 games:</b><br>UEFA Champions League: 3rd<br>UEFA European Cup: 1st<br> Premier League: 4th"> Person 1 <font>|X</font></div>
+						<div class="tag"> Person 2 <font>|X</font></div>
+						<div class="tag"> Person 3 <font>|X</font></div>
+						<div class="tag"> Person 4 <font>|X</font></div>
 					</div>
 					New: <input type="text"><br>
 					<button>Add Attendee</button>
