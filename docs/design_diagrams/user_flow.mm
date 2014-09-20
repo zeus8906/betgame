@@ -1,7 +1,7 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1410805191086" ID="ID_1829686687" MODIFIED="1410824693763" STYLE="bubble" TEXT="User">
-<node CREATED="1410806489800" ID="ID_1070278224" MODIFIED="1410824693763" POSITION="right" STYLE="bubble" TEXT="Login Screen">
+<node CREATED="1410806489800" ID="ID_1070278224" MODIFIED="1411226169715" POSITION="right" STYLE="bubble" TEXT="Login Screen">
 <icon BUILTIN="full-1"/>
 <node CREATED="1410806496746" ID="ID_1014803694" MODIFIED="1410824693763" STYLE="bubble" TEXT="Static content">
 <icon BUILTIN="full-1"/>
@@ -49,7 +49,7 @@
 <node BACKGROUND_COLOR="#ffcc00" CREATED="1410806572474" ID="ID_671544374" MODIFIED="1410824693764" STYLE="bubble" TEXT="User Service - get user details">
 <icon BUILTIN="button_ok"/>
 <icon BUILTIN="full-3"/>
-<node CREATED="1410806396109" ID="ID_449170539" MODIFIED="1410824693764" STYLE="bubble" TEXT="User home">
+<node CREATED="1410806396109" ID="ID_449170539" MODIFIED="1411226221908" STYLE="bubble" TEXT="User home">
 <icon BUILTIN="full-1"/>
 <node CREATED="1410806413333" ID="ID_1937644152" MODIFIED="1410824693764" STYLE="bubble" TEXT="Links">
 <icon BUILTIN="full-1"/>
@@ -80,7 +80,7 @@
 <icon BUILTIN="full-2"/>
 <node BACKGROUND_COLOR="#ffcc00" CREATED="1410820146608" ID="ID_1284769517" MODIFIED="1410824693765" STYLE="bubble" TEXT="Tournament Service - get tournament details">
 <icon BUILTIN="full-3"/>
-<node CREATED="1410820640362" ID="ID_247996824" MODIFIED="1410824693765" STYLE="bubble" TEXT="Game Portal - User view">
+<node CREATED="1410820640362" ID="ID_247996824" MODIFIED="1411226393488" STYLE="bubble" TEXT="Game Portal - User view">
 <icon BUILTIN="full-1"/>
 <node CREATED="1410821177014" ID="ID_625210678" MODIFIED="1410824693765" STYLE="bubble" TEXT="Tips to go">
 <icon BUILTIN="full-1"/>
@@ -110,7 +110,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1410820659837" ID="ID_616998057" MODIFIED="1410824693766" STYLE="bubble" TEXT="Game Portal - Admin View">
+<node CREATED="1410820659837" ID="ID_616998057" MODIFIED="1411226423800" STYLE="bubble" TEXT="Game Portal - Admin View">
 <icon BUILTIN="full-1"/>
 <node CREATED="1410822562934" ID="ID_925233397" MODIFIED="1410824693766" STYLE="bubble" TEXT="Result of recent matches modal/section">
 <icon BUILTIN="full-1"/>
@@ -181,7 +181,7 @@
 <icon BUILTIN="full-2"/>
 </node>
 </node>
-<node CREATED="1410823608161" ID="ID_332856388" MODIFIED="1410824693767" STYLE="bubble" TEXT="Create Game">
+<node CREATED="1410823608161" ID="ID_332856388" MODIFIED="1411226336054" STYLE="bubble" TEXT="Create Game">
 <icon BUILTIN="full-1"/>
 <node CREATED="1410823782016" ID="ID_701314114" MODIFIED="1410824693767" STYLE="bubble" TEXT="Basic Details">
 <icon BUILTIN="full-1"/>
@@ -267,8 +267,7 @@
       3 Method call
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <icon BUILTIN="full-3"/>
 </node>
 </node>
