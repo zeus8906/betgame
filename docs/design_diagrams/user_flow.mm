@@ -251,23 +251,7 @@
 <node BACKGROUND_COLOR="#ffcc00" CREATED="1410824240768" ID="ID_1068211394" MODIFIED="1410824693768" STYLE="bubble" TEXT="Game Service - Commit">
 <icon BUILTIN="full-3"/>
 </node>
-<node BACKGROUND_COLOR="#ffcc00" CREATED="1410824247800" ID="ID_1573831690" MODIFIED="1410824785324" STYLE="bubble" TEXT="Message Service - Send notification to attendes">
-<richcontent TYPE="NOTE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      1 Module
-    </p>
-    <p>
-      2 Event
-    </p>
-    <p>
-      3 Method call
-    </p>
-  </body>
-</html></richcontent>
+<node BACKGROUND_COLOR="#ffcc00" CREATED="1410824247800" ID="ID_1573831690" MODIFIED="1411499209443" STYLE="bubble" TEXT="Message Service - Send notification to attendes">
 <icon BUILTIN="full-3"/>
 </node>
 </node>
