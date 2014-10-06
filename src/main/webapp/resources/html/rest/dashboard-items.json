@@ -1,0 +1,13 @@
+[
+	{
+		"name": "Fifa World Cup 2014",
+		"tip": {  "date": "06/15/14",
+				"home": 3, 
+				"guest": 1,
+				"score": 10},
+		"match": { "homeTeam": "Germany",
+				 "guestTeam": "Honduras",
+				 "homeScore": 3, 
+				 "guestScore": 1}
+	}
+]

@@ -1,0 +1,25 @@
+<div class="dashboard"
+	ng-controller="DashboardController as dashboardCtrl">
+	<div class="dashboard-header">
+		<h2>{{ headerText }}</h2>
+	</div>
+	<div class="dashboard-content">
+		<div class="dashboard-item">
+			<p class="item-header">Create new game
+			<p>
+		</div>
+		<div class="dashboard-item" ng-repeat="item in dashboardCtrl.tickets">
+			<p class="item-header">{{item.name}}
+			<p>
+			<div class="tip-details">
+				<p>{{ 'Last update: ' + item.tip.date }}</p>
+				<p>{{ 'Your tip: ' + item.tip.home +'-'+item.tip.guest }}</p>
+				<p>{{ 'Earned points:' + item.tip.score +'Pts' }}</p>
+			</div>
+			<div class="match-details">
+				<p>{{ item.match.homeTeam + '-' + item.match.guestTeam }}</p>
+				<p>{{ item.match.homeScore + '-' + item.match.guestScore }}</p>
+			</div>
+		</div>
+	</div>
+</div>
