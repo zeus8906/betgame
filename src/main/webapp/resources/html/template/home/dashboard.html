@@ -1,5 +1,5 @@
 <div class="dashboard"
-	ng-controller="DashboardController as dashboardCtrl">
+	ng-controller="DashboardController">
 	<div class="dashboard-header">
 		<h2>{{ headerText }}</h2>
 	</div>
@@ -8,7 +8,7 @@
 			<p class="item-header">Create new game
 			<p>
 		</div>
-		<div class="dashboard-item" ng-repeat="item in dashboardCtrl.tickets">
+		<div class="dashboard-item" ng-repeat="item in tickets">
 			<p class="item-header">{{item.name}}
 			<p>
 			<div class="tip-details">

@@ -7,14 +7,7 @@
 	app.directive('header', function(){
 		return {
 			restrict : 'E',
-			templateUrl: 'template/header.html'
-		};
-	});
-	
-	app.directive('notificationBar', function(){
-		return {
-			restrict : 'E',
-			templateUrl: 'template/notification-bar.html'
+			templateUrl: 'template/common/header.html'
 		};
 	});
 	

@@ -9,5 +9,16 @@
 				 "guestTeam": "Honduras",
 				 "homeScore": 3, 
 				 "guestScore": 1}
+	},
+	{
+		"name": "UEFA Euro 2012",
+		"tip": {  "date": "06/11/12",
+				"home": 2, 
+				"guest": 5,
+				"score": 0},
+		"match": { "homeTeam": "Spain",
+				 "guestTeam": "Hungary",
+				 "homeScore": 8, 
+				 "guestScore": 1}
 	}
 ]
