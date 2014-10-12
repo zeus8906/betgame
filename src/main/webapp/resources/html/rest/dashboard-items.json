@@ -1,5 +1,6 @@
 [
 	{
+		"id" : 1,
 		"name": "Fifa World Cup 2014",
 		"tip": {  "date": "06/15/14",
 				"home": 3, 
@@ -11,6 +12,7 @@
 				 "guestScore": 1}
 	},
 	{
+		"id" : 2,
 		"name": "UEFA Euro 2012",
 		"tip": {  "date": "06/11/12",
 				"home": 2, 

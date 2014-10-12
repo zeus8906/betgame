@@ -1,22 +1,14 @@
-<div class="notification">
+<div class="notification" id="sidebar" ng-controller="BarController">
+	<h2>Notifications</h2>
 	<ul class="notification-list">
-		<li class="notification-item invitation">
-			<div>
-				04/13/14<br>Fifa 14 World Cup<br>
-				<br>New game invitation from Makiverem13
-			</div>
+		<li class="notification-item"
+			ng-repeat="notification in notifications"
+			ng-class="{update: notification.type=='update', invitation : notification.type=='invitation' }">
+			<small class="date"> {{ notification.timestamp }}</small>
+			<p>{{ notification.title }}<br>
+				<br>{{ notification.content + ' from ' + notification.author }}
+			</p>
 		</li>
-		<li class="notification-item update">
-			<div>
-				04/13/14<br>Water Polo 14 World Cup<br>
-				<br>New match update from MisuMester
-			</div>
-		</li>
-		<li class="notification-item update">
-			<div>
-				04/13/14<br>Water Polo 14 World Cup<br>
-				<br>New match update from MisuMester
-			</div>
-		</li>
+		
 	</ul>
 </div>

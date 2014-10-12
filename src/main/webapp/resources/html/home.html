@@ -1,23 +1,35 @@
 <html ng-app="BetgameHome">
-	<head>
-		<meta http-equiv="Content-Language" content="en-us">
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-		<link rel="stylesheet" type="text/css" href="css/home.css" />
-		<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0-dist/css/bootstrap.min.css" />
-		<script type="text/javascript" src="js/lib/angular.js"></script>
-		<script type="text/javascript" src="js/notification-bar/bar-directives.js"></script>
-		<script type="text/javascript" src="js/notification-bar/notification-bar.js"></script>
-		<script type="text/javascript" src="js/home/home-directives.js"></script>
-		<script type="text/javascript" src="js/home/home-controllers.js"></script>
-		<script type="text/javascript" src="js/home/home.js"></script>
-		<title>BetGame</title>
-	</head>
-	<body>
-		<header ng-controller="HomeHeaderController"></header>
-		<div class="content">
-			<notification-bar></notification-bar>
-			<dashboard></dashboard>
-		</div>
-	</body>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type"
+	content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="css/home.css" />
+<link rel="stylesheet" type="text/css" href="sport-zone/css/style.css" />
+<script type="text/javascript" src="js/lib/angular.js"></script>
+<script type="text/javascript"
+	src="js/notification-bar/bar-directives.js"></script>
+<script type="text/javascript"
+	src="js/notification-bar/bar-controllers.js"></script>
+<script type="text/javascript"
+	src="js/notification-bar/notification-bar.js"></script>
+<script type="text/javascript" src="js/home/home-directives.js"></script>
+<script type="text/javascript" src="js/home/home-controllers.js"></script>
+<script type="text/javascript" src="js/home/home.js"></script>
+<script type="text/javascript" src="js/portal/portal-directives.js"></script>
+<script type="text/javascript" src="js/portal/portal-controllers.js"></script>
+<script type="text/javascript" src="js/portal/portal.js"></script>
+<title>BetGame</title>
+</head>
+<body>
+	<header id="header" ng-controller="HomeHeaderController"></header>
+	<div class="content" ng-controller="ContentController">
+		<notification-bar></notification-bar>
+		<content ng-switch="currentView"> 
+			<dashboard ng-switch-when="home"></dashboard> 
+			<portal ng-switch-when="portal"></portal>
+			<create-game ng-switch-when="createGame"></create-game> 
+		</content>
+	</div>
+</body>
 
 </html>

@@ -1,0 +1,113 @@
+body{
+	margin: 0px;
+	font-family: SimSun-ExtB;
+}
+
+form{
+	width:600px;
+	margin-bottom: 50px;
+}
+.header{
+	width:100%;
+	padding-right: 10px;
+	display:inline-block;
+	text-align:center;
+	border-bottom: black solid 1px;
+}
+.content{
+	text-align:right;
+}
+.form-container{
+	width:600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-container .step{
+	border-bottom: grey solid 1px;
+	padding-bottom: 3px;
+}
+
+.button-box{
+	width:100%;
+	text-align:center;
+}
+
+p.group-name{
+	border-bottom: black solid 1px;
+}
+
+.group-display{
+	text-align:initial;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.group{
+	width: 22%;
+	margin: 5px;
+}
+
+.datepicker{
+	width: 25px;
+	height: 25px;
+	margin-top: 5px;
+}
+
+.date-box{
+	width:350px;
+	float:right;
+}
+
+.matches{
+	width:100%;
+	text-align:initial;
+	display: inline-block;
+}
+
+.rounds{
+	float:left;
+}
+
+.tags{
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: black solid 1px;
+	margin-bottom: 3px;
+}
+
+.tag{
+	margin: 5px;
+	border: grey solid 1px;
+	background: rgba(150,150,150,0.6);
+	border-radius: 6px;
+}
+
+.fifth-step{
+	border: none !important;
+}
+
+.rule-label{
+	text-align: left;
+	width: 250px;
+	display: inline-block;
+}
+
+.fourth-step input[type="text"]{
+	width : 30px;
+	margin-right : 10px;
+}
+
+.tags font{
+	cursor: pointer;
+}
+
+.ui-tooltip{
+	width:250px;
+}
+
+.ui-helper-hidden-accessible { display:none; }
+
+.group input {
+	width: 100px;
+}

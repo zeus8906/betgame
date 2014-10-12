@@ -4,22 +4,22 @@
 		<h2>{{ headerText }}</h2>
 	</div>
 	<div class="dashboard-content">
-		<div class="dashboard-item">
+		<div class="dashboard-item grey-box">
 			<p class="item-header">Create new game
 			<p>
 		</div>
-		<div class="dashboard-item" ng-repeat="item in tickets">
-			<p class="item-header">{{item.name}}
-			<p>
+		<div class="dashboard-item grey-box" ng-repeat="item in tickets">
+			<h3>{{item.name}}</h3>
+			<div class="match-details">
+				<p>{{ item.match.homeTeam + '-' + item.match.guestTeam }}</p>
+				<p>{{ item.match.homeScore + '-' + item.match.guestScore }}</p>
+			</div>
 			<div class="tip-details">
 				<p>{{ 'Last update: ' + item.tip.date }}</p>
 				<p>{{ 'Your tip: ' + item.tip.home +'-'+item.tip.guest }}</p>
 				<p>{{ 'Earned points:' + item.tip.score +'Pts' }}</p>
 			</div>
-			<div class="match-details">
-				<p>{{ item.match.homeTeam + '-' + item.match.guestTeam }}</p>
-				<p>{{ item.match.homeScore + '-' + item.match.guestScore }}</p>
-			</div>
+			<a ng-click="openGamePortal(item.id);" class="button">Details...</a>
 		</div>
 	</div>
 </div>

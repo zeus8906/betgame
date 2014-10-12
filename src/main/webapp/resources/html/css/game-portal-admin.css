@@ -1,0 +1,140 @@
+body{
+	margin: 0px;
+	font-family: SimSun-ExtB;
+	overflow-y:auto;
+	height:100%;
+}
+
+.header{
+	width:100%;
+	padding-right: 10px;
+	display:inline-block;
+	text-align:center;
+	border-bottom: black solid 1px;
+}
+
+.menu{
+	float:right;
+	margin-bottom: 10px;
+}
+
+.content{
+	padding:0px;
+	margin: 0px;
+}
+.portal-content{
+	overflow: hidden;
+	width:auto;
+}
+
+.game-portal{
+	padding: 10px;
+}
+
+.notification{
+	float:right;
+	width:250px;
+	height:100%;
+	border-left: grey solid 1px;
+	border-bottom: grey solid 1px;
+}
+
+.notification-list{
+	margin-top: 0px;
+	padding: 0px;
+	width:100%;
+	list-style-type: none;
+}
+
+.notification-item{
+	border: grey solid 1px;
+}
+
+input[type="number"]{
+	width: 40px;
+}
+
+.deadline-date{
+	color: red;
+}
+.fixture-date{
+	font-style:italic;
+}
+
+.tips-to-go{
+	display: inline-block;
+	margin-left:10px;
+}
+
+.game-standings{
+	width: 300px;
+	margin-right:5%;
+	float:right;
+	text-align:right;
+}
+
+table, thead, tbody, td, th{
+	border: black solid 1px;
+}
+
+th, td{
+	padding: 5px;
+}
+
+.game-table{
+	float:right;
+}
+
+thead tr{
+	background: rgba(170,170,170,0.6);
+}
+
+.tournament-standings{
+	width:100%;
+	border-bottom: grey solid 1px;
+}
+
+.tournament-standings h3{
+	margin-top: 10px;
+}
+
+.selected-group{
+	background-color : grey;
+	color: yellow;
+}
+
+.current-group{
+	margin-bottom:10px;
+}
+
+.fixtures{
+	width: 100%
+}
+
+.fixtures h3{
+	margin-top:10px;
+}
+.current-fixtures{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.current-fixtures input[type="text"]{
+	width:100px;
+}
+
+.tournament-standings div{
+	width:100%;
+}
+
+.tip-notes{
+	color: orange;
+	margin-right:50px;
+}
+
+.notification-item.invitation{
+	background-color:green;
+}
+.notification-item.update{
+	background-color:pink;
+}

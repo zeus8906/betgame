@@ -1,4 +1,4 @@
 (function(){
-	var app = angular.module('NotificationBar', ['BarDirectives']);
+	var app = angular.module('NotificationBar', ['BarDirectives', 'NotificationBarControllers']);
 	
 })();
