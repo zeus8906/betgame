@@ -1,0 +1,37 @@
+<div>
+		<a href="" ng-repeat="group in structure.groups" ng-click="setGroup(group.id);">{{ group.name }}</a>
+	</div>
+	
+	<section ng-show="isSet(group.id)" ng-repeat="group in structure.groups">
+	<h5>--- {{ group.name }} ---</h5>
+	<table class="current-group">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Team</th>
+				<th>Played</th>
+				<th>W</th>
+				<th>D</th>
+				<th>L</th>
+				<th>GF</th>
+				<th>GA</th>
+				<th>GD</th>
+				<th>Pts</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="team in group.teams">
+				<td>{{ team.pos }}.</td>
+				<td>{{ team.name }}</td>
+				<td>{{ team.played }}</td>
+				<td>{{ team.wins }}</td>
+				<td>{{ team.draws }}</td>
+				<td>{{ team.losses }}</td>
+				<td>{{ team.gf }}</td>
+				<td>{{ team.ga }}</td>
+				<td>{{ team.gf - team.ga }}</td>
+				<td><b>{{ team.score }}</b></td>
+			</tr>
+		</tbody>
+</table>
+</section>

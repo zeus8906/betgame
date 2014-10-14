@@ -1,78 +1,9 @@
-<div>
-	<select>
-		<option>Groups</option>
-		<option>Knocking-out</option>
-	</select>
+<div class="tournament-standings" ng-controller="tournamentController">
+	<div>
+		<select ng-model="selectedStage" ng-options="stage.key as stage.value for stage in structure.stages">
+		</select>
+	</div>
+	<section ng-switch on="selectedStage">
+		<group-stage ng-switch-when="groups"></group-stage>
+	</section>
 </div>
-<div>
-	<a href="">Group A</a> <a href="">Group B</a> <a href="">Group C</a> <a
-		href="" class="selected-group">Group D</a> <a href="">Group E</a> <a
-		href="">Group F</a> <a href="">Group G</a> <a href="">Group H</a>
-</div>
-<h5>--- Group D ---</h5>
-<table class="current-group">
-	<thead>
-		<tr>
-			<th>#</th>
-			<th>Team</th>
-			<th>Played</th>
-			<th>W</th>
-			<th>D</th>
-			<th>L</th>
-			<th>GF</th>
-			<th>GA</th>
-			<th>GD</th>
-			<th>Pts</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1.</td>
-			<td>Hungary</td>
-			<td>3</td>
-			<td>3</td>
-			<td>0</td>
-			<td>0</td>
-			<td>9</td>
-			<td>1</td>
-			<td>+8</td>
-			<td><b>9</b></td>
-		</tr>
-		<tr>
-			<td>2.</td>
-			<td>Germany</td>
-			<td>3</td>
-			<td>2</td>
-			<td>1</td>
-			<td>0</td>
-			<td>7</td>
-			<td>2</td>
-			<td>+5</td>
-			<td><b>7</b></td>
-		</tr>
-		<tr>
-			<td>3.</td>
-			<td>Portugal</td>
-			<td>3</td>
-			<td>1</td>
-			<td>0</td>
-			<td>2</td>
-			<td>1</td>
-			<td>4</td>
-			<td>-3</td>
-			<td><b>3</b></td>
-		</tr>
-		<tr>
-			<td>4.</td>
-			<td>Brasil</td>
-			<td>3</td>
-			<td>0</td>
-			<td>1</td>
-			<td>0</td>
-			<td>2</td>
-			<td>7</td>
-			<td>-5</td>
-			<td><b>1</b></td>
-		</tr>
-	</tbody>
-</table>

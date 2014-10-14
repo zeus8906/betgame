@@ -1,17 +1,20 @@
 <div class="game-portal" ng-controller="PortalController">
 	<div class="portal-header">
-		<h2>Name of the Game</h2>
+		<h2>{{ gameObject.name }}</h2>
 	</div>
-	<div class="first-row">
-		<game-standings></game-standings>
-		<tips-to-go></tips-to-go>
-	</div>
-	<div class="portal-content">
-		<h3>Tournament Standings</h3>
-		<div class="tournament-standings" tournament-standings>
+	<section ng-controller="TabController">
+		<div id="navigation">
+			<ul>
+				<li> <a ng-click="setTab(1)">Game</a></li>
+				<li> <a ng-click="setTab(2)">Tournament</a></li>
+				<li> <a ng-click="setTab(3)">Fixtures</a></li>
+			</ul>
 		</div>
-		<h3>Fixtures</h3>
-		<div class="Fixtures" fixtures>
+		<div class="first-row" ng-show="isSet(1)">
+			<game-standings></game-standings>
+			<tips-to-go></tips-to-go>
 		</div>
-	</div>
+		<tournament-standings ng-show="isSet(2)"></tournament-standings>
+		<fixtures ng-show="isSet(3)"></fixtures>
+	</section>
 </div>

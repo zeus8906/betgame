@@ -11,25 +11,10 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>1.</td>
-				<td>Bran</td>
-				<td>12 Pts</td>
-			</tr>
-			<tr>
-				<td>2.</td>
-				<td>Eddard</td>
-				<td>8 Pts</td>
-			</tr>
-			<tr>
-				<td>3.</td>
-				<td>Rickon</td>
-				<td>4 Pts</td>
-			</tr>
-			<tr>
-				<td>4.</td>
-				<td>Robb</td>
-				<td>0 Pts</td>
+			<tr ng-repeat="playerInfo in gameObject.gameStandings">
+				<td>{{playerInfo.pos}}</td>
+				<td>{{playerInfo.name}}</td>
+				<td>{{playerInfo.score}} Pts</td>
 			</tr>
 		</tbody>
 	</table>

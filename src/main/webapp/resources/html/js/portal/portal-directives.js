@@ -24,14 +24,21 @@
 	});
 	app.directive('fixtures', function(){
 		return{
-			restrict : 'A',
+			restrict : 'E',
 			templateUrl : templateBase + 'fixtures.html'
 		};
 	});
-	app.directive('tournament-standings', function(){
+	app.directive('tournamentStandings', function(){
 		return{
-			restrict : 'A',
+			restrict : 'E',
 			templateUrl : templateBase + 'tournament-standings.html'
+		};
+	});
+
+	app.directive('groupStage', function(){
+		return{
+			restrict : 'E',
+			templateUrl : templateBase + 'group-stage.html'
 		};
 	});
 	

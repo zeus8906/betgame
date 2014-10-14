@@ -86,10 +86,10 @@ h1#logo a {
 #navigation {
 	background: url(images/nav.gif) repeat-x 0 0;
 	height: 50px;
+	overflow: hidden;
 }
 
 #navigation ul {
-	float: right;
 	list-style-type: none;
 }
 

@@ -70,4 +70,5 @@ body {
 
 notification-bar {
 	float: right;
+	margin-left: 15px;
 }

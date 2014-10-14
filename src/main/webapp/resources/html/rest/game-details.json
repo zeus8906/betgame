@@ -1,0 +1,73 @@
+{
+	"id" : 1,
+	"name": "Fifa 14 World Cup",
+	"gameStandings":[{
+		"pos" : 1,
+		"name" : "Bran",
+		"score" : 12
+	},{
+		"pos" : 2,
+		"name" : "Eddard",
+		"score" : 8
+	},{
+		"pos" : 3,
+		"name" : "Rickon",
+		"score" : 4
+	},{
+		"pos" : 4,
+		"name" : "Robb",
+		"score" : 0
+	}],
+	"tipsToGo":[{
+		"date" : "06/13/14",
+		"deadline" : "06/12/14",
+		"home" : "Chile",
+		"guest" : "Spain"
+	},{
+		"date" : "06/13/14",
+		"deadline" : "06/12/14",
+		"home" : "Portugal",
+		"guest" : "Hungary"
+	}],
+	"structure" : {
+		"stages" : [{"key" : "groups", "value" : "Groups"}, {"key" : "knockout", "value":"Knock Out"}],
+		"groups" : [{"id":1,
+			"name" : "Group A",
+			"teams" : [ {"pos" : 1,
+			 	"name" : "Hungary",
+			 	"played" : 3,
+			 	"wins" : 3,
+			 	"draws" : 0,
+			 	"losses" : 0,
+			 	"gf" : 9,
+			 	"ga" : 0,
+			 	"score" : 9},{"pos" : 2,
+			 	"name" : "Germany",
+			 	"played" : 3,
+			 	"wins" : 2,
+			 	"draws" : 1,
+			 	"losses" : 0,
+			 	"gf" : 5,
+			 	"ga" : 23,
+			 	"score" : 4},{"pos" : 3,
+			 	"name" : "Portugal",
+			 	"played" : 3,
+			 	"wins" : 3,
+			 	"draws" : 0,
+			 	"losses" : 0,
+			 	"gf" : 9,
+			 	"ga" : 0,
+			 	"score" : 9},{"pos" : 4,
+			 	"name" : "Chile",
+			 	"played" : 3,
+			 	"wins" : 3,
+			 	"draws" : 0,
+			 	"losses" : 0,
+			 	"gf" : 9,
+			 	"ga" : 0,
+			 	"score" : 9}
+			 ]}],
+		"knockout" : []
+	}
+	
+}

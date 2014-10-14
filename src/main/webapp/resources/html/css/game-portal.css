@@ -31,36 +31,10 @@ body{
 	padding: 10px;
 }
 
-.notification{
-	float:right;
-	width:250px;
-	height:100%;
-	border-left: grey solid 1px;
-	border-bottom: grey solid 1px;
-}
-
-.notification-list{
-	margin-top: 0px;
-	padding: 0px;
-	width:100%;
-	list-style-type: none;
-}
-
-.notification-item{
-	border: grey solid 1px;
-}
 
 input[type="number"]{
 	width: 40px;
 }
-
-.deadline-date{
-	color: red;
-}
-.fixture-date{
-	font-style:italic;
-}
-
 .tips-to-go{
 	display: inline-block;
 	margin-left:10px;
@@ -74,7 +48,7 @@ input[type="number"]{
 }
 
 table, thead, tbody, td, th{
-	border: black solid 1px;
+	border: green solid 1px;
 }
 
 th, td{

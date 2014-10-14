@@ -1,12 +1,14 @@
 (function(){
-	var app = angular.module('home-controllers', []);
-	var dashboardCtrlDef = function($http, $scope){
+	var app = angular.module('homeControllers', ['services']);
+	var dashboardCtrlDef = function($http, $scope, restService){
 		$scope.headerText = 'Dashboard';
-		$scope.tickets = [];
-		$http.get('rest/dashboard-items.json').success(function(data){
-			$scope.tickets = data;
-		});
+		$scope.tickets = "bazmeg";
+		restService.getDashboardItems().then(setTickets);
 		
+		function setTickets(response){
+			$scope.tickets = response.data;
+		};
+
 		$scope.openGamePortal = function(gameId){
 			$scope.$parent.setView('portal');
 		};
@@ -24,7 +26,7 @@
 		$scope.pageTitle = "---Home---";
 	};
 	
-	app.controller('DashboardController', ['$http', '$scope', dashboardCtrlDef]);
+	app.controller('DashboardController', ['$http', '$scope', 'restService', dashboardCtrlDef]);
 	
 	app.controller('HomeHeaderController', ['$scope', headerCtrlDef]);
 	app.controller('ContentController', ['$scope', contentCtrlDef]);
