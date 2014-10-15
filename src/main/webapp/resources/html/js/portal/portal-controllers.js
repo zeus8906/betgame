@@ -23,15 +23,6 @@
 			$scope.selectedStage =  $scope.structure.stages[0];
 		};
 		
-		$scope.setGroup = function(value){
-			$scope.currentGroup = value;
-		};
-
-		$scope.isSet = function(value){
-			return $scope.currentGroup === value;
-		};
-
-		
 	}]);
 	
 	app.controller('TabController', [ '$scope', function($scope){
@@ -44,5 +35,18 @@
 		$scope.isSet = function(value){
 			return $scope.currentTab === value;
 		};
+	}]);
+	
+	
+	app.controller('fixtureController', ['$scope', 'restService', function($scope, restService){
+		$scope.fixtures = false;
+		//$scope.selectedRound = false;
+		
+		restService.getGameObject().then(setFixtures);
+		function setFixtures(response){
+			$scope.fixtures = response.data.fixtures;
+			$scope.selectedRound =  $scope.fixtures[0];
+		};
+		
 	}]);
 })();

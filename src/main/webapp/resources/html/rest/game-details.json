@@ -68,6 +68,85 @@
 			 	"score" : 9}
 			 ]}],
 		"knockout" : []
-	}
+	},
+	"fixtures":[
+		{ 
+			"id" : 1,
+			"roundTitle" : "1th",
+			"matches": [
+				{
+					"id" : "1",
+					"date" : "06/13/14",
+					"home" : "Andorra",
+					"guest" : "Feroer Islands",
+					"homeScore" : 6,
+					"guestScore" : 4
+				},{
+					"id" : "2",
+					"date" : "06/13/14",
+					"home" : "Spain",
+					"guest" : "Germany",
+					"homeScore" : 1,
+					"guestScore" : 0
+				},{
+					"id" : "3",
+					"date" : "06/13/14",
+					"home" : "Switzerland",
+					"guest" : "Turkey",
+					"homeScore" : 3,
+					"guestScore" : 3
+				},{
+					"id" : "4",
+					"date" : "06/14/14",
+					"home" : "Netherlands",
+					"guest" : "Hungary",
+					"homeScore" : 3,
+					"guestScore" : 5
+				}
+			],
+			"tips" : [
+			{
+				"id" : 1,
+				"matchId" : 1,
+				"home" : 3,
+				"guest" : 2,
+				"score" : 6
+			},
+			{
+				"id" : 2,
+				"matchId" : 2,
+				"home" : 1,
+				"guest" : 4,
+				"score" : 5
+			},
+			{
+				"id" : 3,
+				"matchId" : 3,
+				"home" : 2,
+				"guest" : 2,
+				"score" : 1
+			},
+			{
+				"id" : 4,
+				"matchId" : 4,
+				"home" : 1,
+				"guest" : 5,
+				"score" : 3
+			}
+			]
+		},
+		{
+			"id" : 2,
+			"roundTitle" : "2nd"
+		},
+		{
+			"id" : 3,
+			"roundTitle" : "Semi final"
+		},
+		{
+			"id" : 4,
+			"roundTitle" : "Final"
+		}
+	]
 	
 }

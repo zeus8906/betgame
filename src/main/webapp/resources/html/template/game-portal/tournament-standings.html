@@ -1,9 +1,9 @@
 <div class="tournament-standings" ng-controller="tournamentController">
 	<div>
-		<select ng-model="selectedStage" ng-options="stage.key as stage.value for stage in structure.stages">
+		<select ng-model="selectedStage" ng-options="stage.value for stage in structure.stages">
 		</select>
 	</div>
-	<section ng-switch on="selectedStage">
+	<section ng-switch on="selectedStage.key">
 		<group-stage ng-switch-when="groups"></group-stage>
 	</section>
 </div>

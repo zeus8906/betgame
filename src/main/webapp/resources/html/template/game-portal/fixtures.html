@@ -1,42 +1,17 @@
 <h3>Fixtures</h3>
-<div class="Fixtures" fixtures>
-	<select>
-		<option selected="true">1st Round</option>
-		<option>2nd Round</option>
-		<option>3rd Round</option>
-		<option>Round of 16</option>
-		<option>Quarter Final</option>
-		<option>Semi Final</option>
-		<option>Final</option>
+<div class="Fixtures" ng-controller="fixtureController">
+	<select ng-model="selectedRound"
+		ng-options="round.roundTitle for round in fixtures">
+		<option> --Choose--</option>
 	</select>
-		<div class="current-fixtures">
-			<p>
-				<font class="fixture-date">06/13/14</font> Serbia 6-3 Andorra <font
-					class="tip-notes">(Your tip: 3-1 | 6 Pts)</font>
-			</p>
-			<p>
-				<font class="fixture-date">06/13/14</font> Chile 5-0 Peru <font
-					class="tip-notes">(Your tip: 1-1 | 0 Pts)</font>
-			</p>
-			<p>
-				<font class="fixture-date">06/13/14</font> Germany 1-2 USA <font
-					class="tip-notes">(Your tip: 2-1 | 4 Pts)</font>
-			</p>
-			<p>
-				<font class="fixture-date">06/14/14</font> Spain 0-2 Portugal <font
-					class="tip-notes">(Your tip: 0-2 | 10 Pts)</font>
-			</p>
-			<p>
-				<font class="fixture-date">06/14/14</font> Brasil 1-1 France <font
-					class="tip-notes">(Your tip: 3-1 | 1 Pts)</font>
-			</p>
-			<p>
-				<font class="fixture-date">06/14/14</font> Honduras 1-8 Hungary <font
-					class="tip-notes">(Your tip: 1-8 | 10 Pts)</font>
-			</p>
-			<p>
-				<font class="fixture-date">06/15/14</font> Costa Rica 3-1 Egypt <font
-					class="tip-notes">(Your tip: 0-1 | 3 Pts)</font>
-			</p>
-		</div>
+	<div class="current-fixtures" ng-repeat="round in fixtures"
+		ng-show="selectedRound == round">
+		<p ng-repeat="match in round.matches">
+			<font class="fixture-date">{{ match.date }}</font> {{ match.home }}
+			{{ match.homeScore }} - {{ match.guestScore }} {{ match.guest}} <font
+				class="tip-notes" ng-repeat="tip in round.tips"
+				ng-show="tip.id==match.id">(Your tip: {{ tip.home }}-{{
+				tip.guest }} | {{ tip.score }} Pts)</font>
+		</p>
+	</div>
 </div>
