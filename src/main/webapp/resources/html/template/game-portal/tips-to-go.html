@@ -1,14 +1,14 @@
-<div class="tips-to-go">
+<div class="tips-to-go" ng-controller="tipController">
 	<p>
 	<h3>Tips to go</h3>
 	</p>
-	<form class="tip-form">
-		<p ng-repeat="tip in gameObject.tipsToGo">
+	<form class="tip-form" ng-submit="submitTips()">
+		<p ng-repeat="tip in tips">
 			<font class="date">{{ tip.date }}</font> <font
 				class="deadline-date">(Deadline: {{ tip.deadline }})</font> {{ tip.home }}<input
-				type="number" min="0" max="100"> - <input type="number"
+				ng-model="tip.homeScore" type="number" min="0" max="100"> - <input ng-model="tip.guestScore" type="number"
 				min="0" max="100"> {{ tip.guest }}
-			<button onclick="window.alert('Are you sure you want to send?')">Send</button>
+			<button ng-click="submitSingleTip()">Send</button>
 		</p>
 		<input type="submit" value="Send tips" />
 	</form>

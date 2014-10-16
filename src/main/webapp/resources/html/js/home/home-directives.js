@@ -1,6 +1,5 @@
 /**
  * Defines the directives for the Home module
- * @param homeApp object referencing the Home module
  */
 (function(){
 	var app = angular.module('home-directives',[]);
@@ -15,6 +14,13 @@
 		return {
 			restrict: 'E',
 			templateUrl: 'template/home/dashboard.html'
+		};
+	});
+
+	app.directive('userProfile', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'template/profile/user-profile.html'
 		};
 	});
 })();

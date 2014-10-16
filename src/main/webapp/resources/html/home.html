@@ -20,16 +20,19 @@
 <script type="text/javascript" src="js/portal/portal-directives.js"></script>
 <script type="text/javascript" src="js/portal/portal-controllers.js"></script>
 <script type="text/javascript" src="js/portal/portal.js"></script>
+<script type="text/javascript" src="js/profile/profile-controllers.js"></script>
+<script type="text/javascript" src="js/profile/profile.js"></script>
 <title>BetGame</title>
 </head>
-<body>
-	<header id="header" ng-controller="HomeHeaderController"></header>
-	<div class="content" ng-controller="ContentController">
+<body ng-controller="homeController">
+	<header id="header" ng-controller="homeHeaderController"></header>
+	<div class="content" ng-controller="contentController">
 		<notification-bar></notification-bar>
 		<content ng-switch="currentView"> 
 			<dashboard ng-switch-when="home"></dashboard> 
 			<portal ng-switch-when="portal"></portal>
 			<create-game ng-switch-when="createGame"></create-game> 
+			<user-profile ng-switch-when="userProfile"></user-profile>
 		</content>
 	</div>
 </body>

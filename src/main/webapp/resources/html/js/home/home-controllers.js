@@ -2,7 +2,7 @@
 	var app = angular.module('homeControllers', ['services']);
 	var dashboardCtrlDef = function($http, $scope, restService){
 		$scope.headerText = 'Dashboard';
-		$scope.tickets = "bazmeg";
+		$scope.tickets = false;
 		restService.getDashboardItems().then(setTickets);
 		
 		function setTickets(response){
@@ -20,14 +20,35 @@
 		$scope.setView = function(view){
 			$scope.currentView = view;
 		};
+		
+		$scope.$on("switch-content", function(event, data){
+			$scope.setView(data);
+		});
 	};
 	
-	var headerCtrlDef = function($scope){
+	var headerCtrlDef = function($scope, $location){
 		$scope.pageTitle = "---Home---";
+		
+		$scope.logout = function(){
+			$location.path='/index.html';
+		};
+		
+		$scope.showProfile = function(){
+			$scope.$emit('show-user-profile', []);
+		};
 	};
 	
-	app.controller('DashboardController', ['$http', '$scope', 'restService', dashboardCtrlDef]);
+
+	var homeCtrlDef = function($scope){
+		$scope.$on('show-user-profile', function(event, data){
+			$scope.$broadcast("switch-content", 'userProfile');
+		});
+	};
 	
-	app.controller('HomeHeaderController', ['$scope', headerCtrlDef]);
-	app.controller('ContentController', ['$scope', contentCtrlDef]);
+	app.controller('dashboardController', ['$http', '$scope', 'restService', dashboardCtrlDef]);
+	app.controller('homeHeaderController', ['$scope', '$location', headerCtrlDef]);
+	app.controller('contentController', ['$scope', contentCtrlDef]);
+	app.controller('homeController', ['$scope', homeCtrlDef]);
+	
+	
 })();

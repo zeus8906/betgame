@@ -12,6 +12,15 @@
 				},
 				getGameObject : function(){
 					return ($http.get('rest/game-details.json').then(handleSuccess, handleError));
+				},
+				submitTips : function(tips){
+					
+				},
+				rubmitSingleTip : function(tip){
+					
+				},
+				getUserDetails : function(){
+					return ($http.get('rest/user-details.json').then(handleSuccess, handleError));
 				}
 
 			};

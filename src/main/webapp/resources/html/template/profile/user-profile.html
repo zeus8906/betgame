@@ -1,0 +1,33 @@
+<div class="user-profile" ng-controller="profileController">
+	<div class="form-container">
+		<form class="profile-edit" ng-submit="modifyProfile()">
+			<div class="avatar">
+				<input type="image" src="{{ user.avatar }}" ng-model="user.avatar" />
+				<font class="avatar-label">Choose avatar...</font>
+			</div>
+			<p>
+				Username: <input ng-model="user.nickName" type="text"
+					disabled="true" />
+			</p>
+			<p>
+				First name: <input ng-model="user.firstName" type="text" />
+			</p>
+			<p>
+				Last name: <input ng-model="user.lastName" type="text" />
+			</p>
+			<p class="date-inputs">
+				<input type="date" ng-model="user.birthDate"
+					placeholder="yyyy-MM-dd" min="1900-01-01" max="2013-12-31" required />
+			</p>
+			<p>
+				Password: <input type="password" ng-model="user.password"/>
+			</p>
+			<p>
+				E-mail: <input type="email" ng-model="user.email"/>
+			</p>
+			<div class="button-box">
+				<input type="submit" value="Modify" />
+			</div>
+		</form>
+	</div>
+</div>

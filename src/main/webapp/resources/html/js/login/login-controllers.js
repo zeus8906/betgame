@@ -4,11 +4,13 @@
 (function LoginControllers(){
 	var app = angular.module('LoginControllers', []);
 	
-	var headerCtrlDef = function($scope){
-		//There is no need to do anything here exceptionally
+	var loginCtrlDef = function($scope){
+		$scope.login(){
+			$location.path='/home.html';
+		};
 	};
 
-	app.controller('headerController', ['$scope', headerCtrlDef]);
+	app.controller('loginController', ['$scope', loginCtrlDef]);
 	
 	
 })();
