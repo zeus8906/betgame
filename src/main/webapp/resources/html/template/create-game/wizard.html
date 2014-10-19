@@ -1,0 +1,11 @@
+<div class="content" ng-controller="wizardController">
+	<div class="form-container">
+		<form class="create-game">
+			<basic-details ng-show="{{currentStep>=STEP_BASIC_DETAILS}}"></basic-details>
+			<groups ng-show="currentStep>=STEP_GROUPS"></groups>
+			<fixtures-settings ng-show="currentStep>=STEP_FIXTURES_SETTINGS"></fixtures-settings>
+			<rules ng-show="currentStep>=STEP_RULES"></rules>
+			<attendes ng-show="currentStep>=STEP_ATTENDES"></attendes>
+		</form>
+	</div>
+</div>

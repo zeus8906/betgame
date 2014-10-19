@@ -1,0 +1,47 @@
+<div class="third-step step">
+	<p>
+	<h3>Fixtures</h3>
+	</p>
+	<div class="matches">
+		<div class="rounds">
+			Round: <select>
+				<option>1st Round</option>
+				<option>2nd Round</option>
+				<option>3rd Round</option>
+				<option>Round of 16</option>
+				<option>Quarter-finals</option>
+				<option selected="true">Semi-finals</option>
+				<option>Third place</option>
+				<option>Final</option>
+			</select>
+		</div>
+		<div class="date-box">
+			Dates: <br> <select>
+				<option selected="true" title="Winner of Quarter-finals #1">Q1</option>
+				<option>Q2</option>
+				<option>Q3</option>
+				<option>Q4</option>
+			</select>- <select>
+				<option>Q1</option>
+				<option selected="true">Q2</option>
+				<option>Q3</option>
+				<option>Q4</option>
+			</select>: <input type="text" value="07/02/14" /><img src="calendar.png"
+				class="datepicker" /> <select>
+				<option>Q1</option>
+				<option>Q2</option>
+				<option selected="true">Q3</option>
+				<option>Q4</option>
+			</select>- <select>
+				<option>Q1</option>
+				<option>Q2</option>
+				<option>Q3</option>
+				<option selected="true">Q4</option>
+			</select>: <input type="text" value="07/02/14" /><img src="calendar.png"
+				class="datepicker" />
+		</div>
+	</div>
+	<div class="button-box">
+		<button ng-click="$emit('fixtures-settings-submit', []);">Next</button>
+	</div>
+</div>

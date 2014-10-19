@@ -1,0 +1,39 @@
+<div class="fourth-step step">
+	<p>
+	<h3>Rules</h3>
+	</p>
+	<div class="rule-label">
+		<input type="checkbox">Exact match:</input>
+	</div>
+	<input type="text" value="10">Pts<br>
+	<div class="rule-label">
+		<input type="checkbox">Exact Goal Difference:</input>
+	</div>
+	<input type="text" value="6">Pts<br>
+	<div class="rule-label">
+		<input type="checkbox">Winner:</input>
+	</div>
+	<input type="text" value="4">Pts<br>
+	<div class="rule-label">
+		<input type="checkbox">At least one team's goals:</input>
+	</div>
+	<input type="text" value="3">Pts<br>
+	<div class="rule-label">
+		<input type="checkbox">Number of Goals:</input>
+	</div>
+	<input type="text" value="2">Pts<br>
+	<div class="rule-label">
+		<input type="checkbox">Goal difference (switched):</input>
+	</div>
+	<input type="text" value="1">Pts<br>
+	<div class="rule-label">
+		<input type="checkbox">Custom 1:
+		<button>Remove</button>
+		</input>
+	</div>
+	<input type="text" value="3">Pts<br>
+	<button>Add custom rule</button>
+	<div class="button-box">
+		<button ng-click="$emit('rules-submit', []);">Next</button>
+	</div>
+</div>

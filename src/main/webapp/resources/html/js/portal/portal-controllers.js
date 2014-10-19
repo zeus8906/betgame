@@ -76,7 +76,7 @@
 		};
 		
 		$scope.submitSingleTip = function(tip){
-			restservice.submitSingleTip(tip);
+			restService.submitSingleTip(tip);
 		};
 		
 	}]);

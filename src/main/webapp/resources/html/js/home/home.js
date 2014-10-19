@@ -1,4 +1,4 @@
 (function HomeApp(){
-	angular.module('BetgameHome', ['home-directives', 'homeControllers', 'NotificationBar', 'GamePortal', 'userProfile']);
+	angular.module('BetgameHome', ['home-directives', 'homeControllers', 'NotificationBar', 'GamePortal', 'userProfile', 'wizard']);
 	
 })();

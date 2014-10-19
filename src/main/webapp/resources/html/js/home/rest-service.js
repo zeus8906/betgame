@@ -16,7 +16,7 @@
 				submitTips : function(tips){
 					
 				},
-				rubmitSingleTip : function(tip){
+				submitSingleTip : function(tip){
 					
 				},
 				getUserDetails : function(){

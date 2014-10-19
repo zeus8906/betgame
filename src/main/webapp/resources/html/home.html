@@ -5,6 +5,8 @@
 	content="text/html; charset=windows-1252">
 <link rel="stylesheet" type="text/css" href="css/home.css" />
 <link rel="stylesheet" type="text/css" href="css/game-portal.css" />
+<link rel="stylesheet" type="text/css" href="css/user-profile.css" />
+<link rel="stylesheet" type="text/css" href="css/create-game.css" />
 <link rel="stylesheet" type="text/css" href="sport-zone/css/style.css" />
 <script type="text/javascript" src="js/lib/angular.js"></script>
 <script type="text/javascript"
@@ -22,6 +24,10 @@
 <script type="text/javascript" src="js/portal/portal.js"></script>
 <script type="text/javascript" src="js/profile/profile-controllers.js"></script>
 <script type="text/javascript" src="js/profile/profile.js"></script>
+<script type="text/javascript" src="js/wizard/wizard-directives.js"></script>
+<script type="text/javascript" src="js/wizard/wizard-controllers.js"></script>
+<script type="text/javascript" src="js/wizard/wizard.js"></script>
+
 <title>BetGame</title>
 </head>
 <body ng-controller="homeController">
@@ -33,6 +39,7 @@
 			<portal ng-switch-when="portal"></portal>
 			<create-game ng-switch-when="createGame"></create-game> 
 			<user-profile ng-switch-when="userProfile"></user-profile>
+			<wizard ng-switch-when="wizard"></wizard>
 		</content>
 	</div>
 </body>
