@@ -1,67 +1,13 @@
-<div class="second-step step">
+<div class="second-step step" ng-controller="groupsController">
 	<div class="team-selection">
 		<p>
-		<h3>Groups&Teams</h3>
+		<h3>Groups&amp;Teams</h3>
 		</p>
 		<div class="group-display">
-			<div class="group">
-				<p class="group-name">Group A</p>
-				<p class="team-name">1. Spain</p>
-				<p class="team-name">2. Argentina</p>
-				<p class="team-name">
-					3. <input type="text">
-				</p>
-			</div>
-			<div class="group">
-				<p class="group-name">Group B</p>
-				<p class="team-name">1. Brasil</p>
-				<p class="team-name">
-					2. <input type="text">
-				</p>
-			</div>
-			<div class="group">
-				<p class="group-name">Group C</p>
-				<p class="team-name">1. Germany</p>
-				<p class="team-name">
-					2. <input type="text">
-				</p>
-			</div>
-			<div class="group">
-				<p class="group-name">Group D</p>
-				<p class="team-name">1. Chile</p>
-				<p class="team-name">
-					2. <input type="text">
-				</p>
-			</div>
-			<div class="group">
-				<p class="group-name">Group E</p>
-				<p class="team-name">1. Peru</p>
-				<p class="team-name">
-					2. <input type="text">
-				</p>
-			</div>
-			<div class="group">
-				<p class="group-name">Group F</p>
-				<p class="team-name">1. Italy</p>
-				<p class="team-name">
-					2. <input type="text">
-				</p>
-			</div>
-			<div class="group">
-				<p class="group-name">Group G</p>
-				<p class="team-name">1. Greece</p>
-				<p class="team-name">
-					2. <input type="text">
-				</p>
-			</div>
-			<div class="group">
-				<p class="group-name">Group H</p>
-				<p class="team-name">1. Australia</p>
-				<p class="team-name">2. Portugal</p>
-				<p class="team-name">3. Netherlands</p>
-				<p class="team-name">
-					4. <input type="text">
-				</p>
+			<div class="group" ng-repeat="group in groups">
+				<p class="group-name">{{ group.name }}</p>
+					<p class="team-name" ng-repeat="team in group.teams">{{ $index + 1 }}. {{ team.name }} </p>
+					<p ngShow="group.teams.length<structure.teamNo/groups.length">{{group.teams.length + 1}}. <input ng-model="group.team[group.teams.length]" type="text">
 			</div>
 		</div>
 	</div>

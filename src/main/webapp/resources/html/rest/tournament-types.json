@@ -1,0 +1,43 @@
+[
+	{
+		"key" : 1,
+		"name" : "Fifa World Cup"
+	},
+	{
+		"key" : 2,
+		"name" : "Fifa European Cup"
+	},
+	{
+		"key" : 3,
+		"name" : "UEFA Champions League"
+	},
+	{
+		"key" : 4,
+		"name" : "UEFA European League"
+	},
+	{
+		"key" : 5,
+		"name" : "IHF Handball World Cup"
+	},
+	{
+		"key" : 6,
+		"name" : "IHF Handball European Cup"
+	},
+	{
+		"key" : 7,
+		"name" : "Olympic Handball Cup"
+	},
+	{
+		"key" : 8,
+		"name" : "Water Polo World Cup"
+	},
+	{
+		"key" : 9,
+		"name" : "Water Polo European Cup"
+	},
+	{
+		"key" : 10,
+		"name" : "Olympic Water Polo Cup"
+						
+	}
+]

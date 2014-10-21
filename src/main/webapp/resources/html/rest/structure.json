@@ -1,0 +1,19 @@
+{
+    "tournamentType": 1,
+    "groups": [
+        "Group A",
+        "Group B",
+        "Group C",
+        "Group D",
+        "Group E",
+        "Group F",
+        "Group G",
+        "Group H"
+    ],
+    "teamNo": 32,
+    "matchNoInGroups": 1,
+    "matchNoInKO": 1,
+    "matchNoInFinals": 1,
+    "qualifiersFromGroup": 2,
+    "isBronzeMatch": true
+}

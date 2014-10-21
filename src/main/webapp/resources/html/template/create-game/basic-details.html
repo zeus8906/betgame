@@ -1,22 +1,16 @@
-<div class="first-step step">
-					<p><h3>Basic Details</h3></p>
-					<p>Name: <input type="text"/></p>
-					<p>Tournament type: 
-						<select>
-							<option>Fifa World Cup</option>
-							<option>Fifa European Cup</option>
-							<option>UEFA Champions League</option>
-							<option>UEFA European League</option>
-							<option>IHF Handball World Cup</option>
-							<option>IHF Handball European Cup</option>
-							<option>Olympic Handball Cup</option>
-							<option>Water Polo World Cup</option>
-							<option>Water Polo European Cup</option>
-							<option>Olympic Water Polo Cup</option>
-							<option>Custom Tournament</option>
-						</select>
-					</p>
-					<div class="button-box">
-						<button ng-click="$emit('basic-details-submit', []);">Next</button>
-					</div>
-				</div>
+<div class="first-step step" ng-controller="basicDetailsController">
+	<p>
+	<h3>Basic Details</h3>
+	</p>
+	<p>
+		Name: <input type="text" ng-model="name" />
+	</p>
+	<p>
+		Tournament type: <select ng-model="selectedType"
+			ng-options="tournament.key as tournament.name for tournament in tournamentTypes">
+		</select>
+	</p>
+	<div class="button-box">
+		<button ng-click="submitBasicDetails();">Next</button>
+	</div>
+</div>

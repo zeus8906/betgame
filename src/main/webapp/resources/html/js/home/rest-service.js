@@ -21,6 +21,12 @@
 				},
 				getUserDetails : function(){
 					return ($http.get('rest/user-details.json').then(handleSuccess, handleError));
+				},
+				getTournamentTypes : function(){
+					return $http.get('rest/tournament-types.json');
+				},
+				getStructure : function(tournamentType){
+					return $http.get('rest/structure.json');
 				}
 
 			};
